@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-job-listing',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-listing.component.css']
 })
 export class JobListingComponent implements OnInit {
+  jobs: any[] = [];
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+  }
 
   ngOnInit(): void {
+    this.getData();
+  }
+
+  getData():void {
+    this.jobs = this.dataService.getData();
   }
 
 }

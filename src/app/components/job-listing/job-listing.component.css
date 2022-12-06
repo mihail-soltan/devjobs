@@ -1,0 +1,21 @@
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 3px 0 rgba(0,0,0,1);
+    margin: 20px;
+    width: 350px;
+}
+
+.job-card {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.company {
+    color: #5964E0;
+    font-weight:bold;
+}

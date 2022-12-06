@@ -1,1 +1,12 @@
-<p>job-listing works!</p>
+<mat-card class="job-card" *ngFor="let job of jobs">
+    <mat-card-content>
+        <p>{{job.postedAt}}<strong> . </strong>{{job.contract}}</p>
+        <h2>
+            {{job.position}}
+        </h2>
+        <p>{{job.location}}</p>
+        <p class="company">{{job.company}}</p>
+    </mat-card-content>
+</mat-card>
+
+
