@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { JobListingComponent } from './components/job-listing/job-listing.component';
 import { JobDetailsComponent } from './components/job-details/job-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card'; 
+import { MatCardModule } from '@angular/material/card';
+import { NavbarComponent } from './components/navbar/navbar.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     JobListingComponent,
-    JobDetailsComponent
+    JobDetailsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
