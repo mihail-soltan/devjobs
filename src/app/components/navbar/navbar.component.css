@@ -1,0 +1,68 @@
+@import '../../../variables.css';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    height: 12rem;
+    background-image: url("../../../assets/navbar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.logo {
+    color: var(--white);
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 0.5rem;
+    /* cursor: pointer; */
+}
+
+.toggle input[type='checkbox'] {
+    display: none;
+}
+
+
+
+.toggle label {
+    background-color: var(--white);
+    border-radius: 1.563rem;       
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 3.125rem;
+    height: 1.563rem;
+}
+
+
+.toggle label::after {
+    background-color: var(--violet);
+    border-radius: 50%;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width: 1.313rem; /* 21px*/
+    height: 1.313rem; /* 21px*/
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    transform: translateX(1.563rem);
+}
