@@ -13,4 +13,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleTheme(e: any) {
+    document.body.classList.toggle('dark-theme');
+  }
 }
