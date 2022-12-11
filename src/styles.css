@@ -11,7 +11,9 @@ body {
   font-family: var(--main-font);
   background-color: rgb(216, 213, 213);
 }
-
+body.dark-theme {
+  background-color: var(--midnight);
+}
 /* FONTS */
 
 h1 {
