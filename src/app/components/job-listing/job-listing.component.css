@@ -20,3 +20,11 @@
     color: #5964E0;
     font-weight:bold;
 }
+
+/* pentru container job-listing */
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+}
