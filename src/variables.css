@@ -37,5 +37,12 @@
     /* BUTTONS */
     --button-border-radius: 0.313rem; /* 5px */
     --button-padding: 1rem 2.469rem; /* 16px 39.5px */
-    
+ 
+    /* CHECKBOX */
+
+    --checkbox-size: 1.5rem; /* 24px */
+    --radius: 0.188rem; /* 3px */
+    --checkbox-border: 0.063rem solid var(--grey); /* 1px */
+    --checkbox-background: var(--grey);
+    --checkbox-background-checked: var(--violet);
 }

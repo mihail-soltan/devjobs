@@ -16,6 +16,7 @@
 
 .logo {
     color: var(--white);
+    margin-bottom: 0 !important;
 }
 
 .toggle {
@@ -62,6 +63,10 @@
     transition: all ease-in-out 0.3s;
     width: 1.313rem; /* 21px*/
     height: 1.313rem; /* 21px*/
+}
+
+.toggle:hover label::after {
+    background-color: var(--light-violet);
 }
 
 .toggle input[type='checkbox']:checked ~ label::after {
