@@ -1,0 +1,36 @@
+<form class="search-form">
+  <div class="form-input">
+    <i class="icon search-icon"></i>
+
+    <input
+      type="text"
+      name="search"
+      id="search"
+      placeholder="Filter by title, companies, expertise..."
+      [(ngModel)]="searchInput"
+      class="search"
+    />
+  </div>
+  <div class="form-input">
+    <i class="icon location-icon"></i>
+    <input
+      type="text"
+      name="location"
+      id="location"
+      placeholder="Filter by location..."
+      [(ngModel)]="locationInput"
+      class="location"
+    />
+  </div>
+  <div class="fulltime-container">
+    <input
+      type="checkbox"
+      class="fulltime"
+      name="fulltime"
+      [(ngModel)]="fullTime"
+      id="fulltime"
+    />
+    <label for="fulltime">Full Time Only</label>
+    <button class="btn purple-btn">Search</button>
+  </div>
+</form>
