@@ -1,12 +1,18 @@
-<div class="flex">
-  <mat-card class="job-card" *ngFor="let job of jobs">
-    <mat-card-content>
-      <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>
-      <h2>
-        {{ job.position }}
-      </h2>
-      <p>{{ job.location }}</p>
-      <p class="company">{{ job.company }}</p>
-    </mat-card-content>
-  </mat-card>
+<div class="job-listing-container">
+  <div class="flex">
+    <div class="job-card" *ngFor="let job of jobs">
+      <div class="job-card-header">
+        <img class="job-logo" src="{{ job.logo }}" alt="logo" />
+      </div>
+      <div class="job-card-content">
+        <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>
+        <h2>
+          {{ job.position }}
+        </h2>
+        <p class="company">{{ job.company }}</p>
+        <p>{{ job.location }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="load-more-btn">Load More</button>
 </div>

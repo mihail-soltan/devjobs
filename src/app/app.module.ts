@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { JobListingComponent } from './components/job-listing/job-listing.component';
 import { JobDetailsComponent } from './components/job-details/job-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component'; 
 
@@ -21,7 +20,6 @@ import { SearchComponent } from './components/search/search.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule,
     FormsModule
   ],
   providers: [],
