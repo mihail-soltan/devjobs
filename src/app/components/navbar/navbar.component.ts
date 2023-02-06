@@ -9,16 +9,15 @@ import { SharedService } from 'src/app/services/shared.service';
 export class NavbarComponent implements OnInit {
 
   constructor(public sharedService: SharedService ) { }
-  currentTheme: string = '';
+  darkmode: boolean = false;
   ngOnInit(): void {
-    this.sharedService.theme.subscribe((theme: string) => {
-     this.currentTheme = theme;
+    this.sharedService.darkmode.subscribe((mode: boolean) => {
+      this.darkmode = this.sharedService.darkmode.value;
     })
   }
 
   toggleTheme(e: any) {
     document.body.classList.toggle('dark-theme');
     this.sharedService.toggleTheme();
-    console.log(this.currentTheme);
   }
 }

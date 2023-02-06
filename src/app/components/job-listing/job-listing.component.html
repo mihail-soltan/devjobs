@@ -1,12 +1,12 @@
 <div class="job-listing-container">
   <div class="flex">
-    <div class="job-card" *ngFor="let job of jobs">
+    <div class="job-card" *ngFor="let job of jobs" [ngClass]="{darkmode: darkmode}">
       <div class="job-card-header">
         <img class="job-logo" src="{{ job.logo }}" alt="logo" />
       </div>
       <div class="job-card-content">
         <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>
-        <h2>
+        <h2 class="job-title">
           {{ job.position }}
         </h2>
         <p class="company">{{ job.company }}</p>
@@ -14,5 +14,5 @@
       </div>
     </div>
   </div>
-  <button class="load-more-btn">Load More</button>
+  <button class="load-more-btn" (click)="onShowFulltime()">Load More</button>
 </div>
