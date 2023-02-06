@@ -62,6 +62,9 @@
   width: 25vw;
 }
 
+.search.darkmode, .location.darkmode {
+  border-right: 0.05rem solid var(--grey);
+}
 .fulltime-container {
   display: flex;
   flex-direction: row;
@@ -82,4 +85,9 @@
 }
 .fulltime:checked {
   accent-color: var(--checkbox-background-checked);
+}
+.search-form > .form-input input.darkmode,
+.search-form > .fulltime-container.darkmode {
+  background: var(--very-dark-blue);
+  color: var(--white);
 }

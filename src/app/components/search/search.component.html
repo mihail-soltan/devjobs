@@ -9,6 +9,7 @@
       placeholder="Filter by title, companies, expertise..."
       [(ngModel)]="searchInput"
       class="search"
+      [ngClass]="{ 'darkmode': darkmode }"
     />
   </div>
   <div class="form-input">
@@ -20,15 +21,17 @@
       placeholder="Filter by location..."
       [(ngModel)]="locationInput"
       class="location"
+      [ngClass]="{ 'darkmode': darkmode }"
     />
   </div>
-  <div class="fulltime-container">
+  <div class="fulltime-container" [ngClass]="{ 'darkmode': darkmode }">
     <input
       type="checkbox"
       class="fulltime"
       name="fulltime"
       [(ngModel)]="fullTime"
       id="fulltime"
+      (change)="onFullTimeChange()"
     />
     <label for="fulltime">Full Time Only</label>
     <button class="btn purple-btn">Search</button>

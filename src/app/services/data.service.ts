@@ -11,4 +11,8 @@ export class DataService {
   getData() {
     return data;
   }
+
+  onShowFullTime() {
+    return data.filter((job) => job.contract === 'Full Time')
+  }
 }
