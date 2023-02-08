@@ -6,7 +6,7 @@
       </div>
       <div class="job-card-content">
         <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>
-        <h2 class="job-title">
+        <h2 class="job-title" (click)="onOpenJobDetails(job)">
           {{ job.position }}
         </h2>
         <p class="company">{{ job.company }}</p>
@@ -14,5 +14,5 @@
       </div>
     </div>
   </div>
-  <button class="load-more-btn" (click)="onShowFulltime()">Load More</button>
+  <button class="load-more-btn">Load More</button>
 </div>
