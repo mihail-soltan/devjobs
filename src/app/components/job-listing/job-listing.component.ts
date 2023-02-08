@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import { SharedService } from 'src/app/services/shared.service';
+import { Job } from 'src/app/job';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-job-listing',
@@ -14,7 +16,8 @@ export class JobListingComponent implements OnInit {
 
   constructor(
     private dataService: DataService,
-    private sharedService: SharedService
+    private sharedService: SharedService,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -24,16 +27,25 @@ export class JobListingComponent implements OnInit {
     });
     this.sharedService.fullTime.subscribe((isFulltime: boolean) => {
       this.isFullTime = this.sharedService.fullTime.value;
+      if (this.isFullTime) {
+        this.onShowFullTime()
+      } else {
+        this.getData();
+      }
     });
   }
 
   getData(): void {
-    this.jobs = this.dataService.getData()
+    this.jobs = this.dataService.getData();
   }
 
-  onShowFulltime() {
-    this.jobs = this.jobs.filter((job) => job.contract === 'Full Time')
-    // console.log("lmao")
-    // this.jobs = this.dataService.onShowFullTime()
+  onShowFullTime() {
+    this.jobs = this.dataService.onShowFullTime()
+  }
+
+  onOpenJobDetails(job: Job) {
+    // console.log(job)
+    this.sharedService.setJobDetails(job)
+    this.router.navigate(['/job', job.company, job.id]);
   }
 }

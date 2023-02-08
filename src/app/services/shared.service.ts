@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
+import { Job } from '../job';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SharedService {
-
   // currentTheme = localStorage.getItem('darkmode');
   darkmode = new BehaviorSubject(false);
   fullTime = new BehaviorSubject(false);
-  constructor() { }
+
+  private jobDetails: any;
+
+  constructor() {}
 
   toggleTheme() {
     if (this.darkmode.value === false) {
@@ -27,6 +29,14 @@ export class SharedService {
     } else {
       this.fullTime.next(false);
     }
-    console.log(this.fullTime.value)
+    console.log(this.fullTime.value);
+  }
+
+  setJobDetails(job: Job) {
+    this.jobDetails = job;
+  }
+
+  getJobDetails() {
+    return this.jobDetails
   }
 }
