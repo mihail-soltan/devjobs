@@ -12,7 +12,6 @@ const routes: Routes = [
       {
         path: ':company/:id',
         component: JobDetailsComponent,
-        data: { job: {} },
       },
     ],
   },

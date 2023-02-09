@@ -72,6 +72,15 @@ p {
   color: var(--violet);
 }
 
+.light-grey-btn {
+  background-color: var(--light-grey);
+  color: var(--violet);
+}
+
+.light-grey-btn:hover {
+  background-color: var(--grey);
+}
+
 .grey-btn:hover {
   background-color: var(--dark-grey);
 }

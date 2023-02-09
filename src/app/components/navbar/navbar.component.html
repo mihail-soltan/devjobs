@@ -7,4 +7,4 @@
     <img src="../../../assets/dark_theme.png" class="theme-icon" alt="dark theme">
   </div>
 </div>
-<app-search [darkmode]="darkmode"></app-search>
+<app-search *ngIf="showSearch" [darkmode]="darkmode"></app-search>
