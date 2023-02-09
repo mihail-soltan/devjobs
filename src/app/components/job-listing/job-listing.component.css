@@ -36,11 +36,18 @@
 .job-title:hover {
   color: var(--dark-grey);
 }
-.job-logo {
-  position: absolute;
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -3.5rem;
   width: 3rem;
   height: 3rem;
+}
+
+.logo-radius {
+  border-radius: 0.9rem;
 }
 
 .load-more-btn {

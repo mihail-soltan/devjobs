@@ -2,7 +2,9 @@
   <div class="flex">
     <div class="job-card" *ngFor="let job of jobs" [ngClass]="{darkmode: darkmode}">
       <div class="job-card-header">
-        <img class="job-logo" src="{{ job.logo }}" alt="logo" />
+        <div class="logo-container logo-radius"  [style]="{'background-color': job.logoBackground }" >
+          <img class="job-logo" src="{{ job.logo }}" alt="logo"/>
+        </div>
       </div>
       <div class="job-card-content">
         <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>

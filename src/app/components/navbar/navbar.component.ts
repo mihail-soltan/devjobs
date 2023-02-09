@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
+import { Router, NavigationStart } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,12 +9,22 @@ import { SharedService } from 'src/app/services/shared.service';
   encapsulation: ViewEncapsulation.None
 })
 export class NavbarComponent implements OnInit {
-
-  constructor(public sharedService: SharedService ) { }
   darkmode: boolean = false;
+  showSearch: boolean = false;
+
+  constructor(public sharedService: SharedService, private router: Router ) { }
   ngOnInit(): void {
     this.sharedService.darkmode.subscribe((mode: boolean) => {
       this.darkmode = this.sharedService.darkmode.value;
+    })
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationStart){
+        if (event.url !== '/') {
+          this.showSearch = false;
+        } else {
+          this.showSearch = true;
+        }
+      }
     })
   }
 
