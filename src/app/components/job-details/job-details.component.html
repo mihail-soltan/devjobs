@@ -17,4 +17,28 @@
       <button class="btn light-grey-btn">Company Site</button>
     </div>
   </div>
+  <div class="details-main">
+    <div class="apply-now-container">
+      <div class="details-title">
+        <p class="date">
+          {{ job.postedAt }} <strong>.</strong> {{ job.contract }}
+        </p>
+        <h1>{{ job.position }}</h1>
+        <h4 class="location">{{ job.location }}</h4>
+      </div>
+      <div>
+        <button class="btn purple-btn">Apply Now</button>
+      </div>
+    </div>
+    <h3>Requirements</h3>
+    <p>{{ job.requirements.content }}</p>
+    <ul>
+      <li *ngFor="let item of job.requirements.items">{{ item }}</li>
+    </ul>
+    <h3>What You Will Do</h3>
+    <p>{{ job.role.content }}</p>
+    <ol>
+      <li *ngFor="let item of job.role.items">{{ item }}</li>
+    </ol>
+  </div>
 </div>
