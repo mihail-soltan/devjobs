@@ -5,8 +5,8 @@ import { Job } from '../job';
   providedIn: 'root',
 })
 export class SharedService {
-  // currentTheme = localStorage.getItem('darkmode');
-  darkmode = new BehaviorSubject(false);
+  currentTheme = localStorage.getItem('darkmode');
+  darkmode = new BehaviorSubject(eval(this.currentTheme!));
   fullTime = new BehaviorSubject(false);
 
   private jobDetails: any;
