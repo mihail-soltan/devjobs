@@ -30,15 +30,31 @@
         <button class="btn purple-btn">Apply Now</button>
       </div>
     </div>
+    <p>{{ job.description }}</p>
     <h3>Requirements</h3>
     <p>{{ job.requirements.content }}</p>
     <ul>
-      <li *ngFor="let item of job.requirements.items">{{ item }}</li>
+      <li *ngFor="let item of job.requirements.items">
+        <span>{{ item }}</span>
+      </li>
     </ul>
     <h3>What You Will Do</h3>
     <p>{{ job.role.content }}</p>
     <ol>
-      <li *ngFor="let item of job.role.items">{{ item }}</li>
+      <li *ngFor="let item of job.role.items">
+        <span> {{ item }}</span>
+      </li>
     </ol>
   </div>
 </div>
+<footer>
+  <div class="footer-content">
+    <div class="footer-post">
+      <h3>{{ job.position }}</h3>
+      <p>{{ job.company }}</p>
+    </div>
+    <div class="footer-post">
+      <button class="btn purple-btn">Apply Now</button>
+    </div>
+  </div>
+</footer>

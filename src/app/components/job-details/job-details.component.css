@@ -29,6 +29,16 @@
 .details-main p, li {
     color: var(--dark-grey);
 }
+
+li::marker {
+    color: var(--violet);
+    font-weight: var(--bold-font-weight);
+}
+
+li span {
+    position: relative;
+  left: 2.25rem;
+}
 .date {
     color: var(--grey);
 }
@@ -59,4 +69,25 @@
 
 .details-logo img {
     margin: 3.68rem 1.875rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45.625rem;
+}
+.footer-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-post > * {
+    margin: 0.5rem 0;
 }
