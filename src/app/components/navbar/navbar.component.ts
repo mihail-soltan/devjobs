@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
 import { Router, NavigationStart } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { Router, NavigationStart } from '@angular/router';
 export class NavbarComponent implements OnInit {
   darkmode: boolean = false;
   showSearch: boolean = false;
-
+  @ViewChild('themeToggle', {static: true}) themeToggle?: ElementRef<HTMLInputElement>;
   constructor(public sharedService: SharedService, private router: Router ) { }
   ngOnInit(): void {
     this.sharedService.darkmode.subscribe((mode: boolean) => {
@@ -29,7 +29,6 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleTheme(e: any) {
-    document.body.classList.toggle('dark-theme');
     this.sharedService.toggleTheme();
   }
 }

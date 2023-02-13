@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from './services/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'devjobs';
-
-  constructor() { }
+  darkmode: boolean = false;
+  constructor(private sharedService: SharedService,) { }
 
   ngOnInit(): void {
-    localStorage.setItem('darkmode', 'false');
+    this.sharedService.darkmode.subscribe((mode: boolean) => {
+      this.darkmode = this.sharedService.darkmode.value;
+    });
+    if(localStorage.getItem('darkmode') === null){
+      localStorage.setItem('darkmode', 'false');
+    }
   }
 }

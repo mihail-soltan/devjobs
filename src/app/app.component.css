@@ -1,0 +1,9 @@
+@import'../variables.css';
+
+.app-container {
+    background-color: rgb(216, 213, 213);
+}
+
+.app-container.darkmode {
+    background-color: var(--midnight);
+}
