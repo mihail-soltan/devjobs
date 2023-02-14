@@ -1,6 +1,6 @@
 <div class="job-details">
   <!-- HEADER CONTAINER -->
-  <div class="header">
+  <div class="header" [ngClass]="{darkmode: darkmode}">
     <div class="brand-container">
       <div
         class="details-logo"
@@ -14,10 +14,10 @@
       </div>
     </div>
     <div class="btn-container">
-      <button class="btn light-grey-btn">Company Site</button>
+      <button class="btn light-grey-btn" [ngClass]="{darkmode: darkmode}">Company Site</button>
     </div>
   </div>
-  <div class="details-main">
+  <div class="details-main" [ngClass]="{darkmode: darkmode}">
     <div class="apply-now-container">
       <div class="details-title">
         <p class="date">
@@ -47,7 +47,7 @@
     </ol>
   </div>
 </div>
-<footer>
+<footer [ngClass]="{darkmode: darkmode}">
   <div class="footer-content">
     <div class="footer-post">
       <h3>{{ job.position }}</h3>
