@@ -33,10 +33,13 @@ export class JobListingComponent implements OnInit {
         this.getData();
       }
     });
+    this.dataService.jobs.subscribe((job) => {
+      this.jobs = this.dataService.jobs.getValue()
+    })
   }
 
   getData(): void {
-    this.jobs = this.dataService.getData();
+    this.jobs = this.dataService.getData().getValue();
   }
 
   onShowFullTime() {
