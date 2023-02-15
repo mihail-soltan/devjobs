@@ -1,16 +1,25 @@
 <div class="job-listing-container">
   <div class="flex">
-    <div class="job-card" *ngFor="let job of jobs" [ngClass]="{darkmode: darkmode}">
+    <div
+      class="job-card"
+      *ngFor="let job of jobs"
+      [ngClass]="{ darkmode: darkmode }"
+    >
       <div class="job-card-header">
-        <div class="logo-container logo-radius"  [style]="{'background-color': job.logoBackground }" >
-          <img class="job-logo" src="{{ job.logo }}" alt="logo"/>
+        <div
+          class="logo-container logo-radius"
+          [style]="{ 'background-color': job.logoBackground }"
+        >
+          <img class="job-logo" src="{{ job.logo }}" alt="logo" />
         </div>
       </div>
       <div class="job-card-content">
         <p>{{ job.postedAt }}<strong> . </strong>{{ job.contract }}</p>
-        <h2 class="job-title" (click)="onOpenJobDetails(job)">
-          {{ job.position }}
-        </h2>
+        <div class="title-container"> 
+          <h2 class="job-title" (click)="onOpenJobDetails(job)">
+            {{ job.position }}
+          </h2>
+        </div>
         <p class="company">{{ job.company }}</p>
         <p>{{ job.location }}</p>
       </div>
