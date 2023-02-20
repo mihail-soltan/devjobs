@@ -12,7 +12,10 @@ export class SearchComponent implements OnInit {
   locationInput: string = '';
   fullTime: boolean = false;
 
-  constructor(private sharedService: SharedService, private dataService: DataService) {}
+  constructor(
+    private sharedService: SharedService,
+    private dataService: DataService
+  ) {}
 
   ngOnInit(): void {
     console.log(this.darkmode);
@@ -22,16 +25,23 @@ export class SearchComponent implements OnInit {
   }
 
   onFullTimeChange() {
-    this.sharedService.onFullTimeChange();
+    // this.sharedService.onFullTimeChange();
+    console.log(this.fullTime);
   }
 
   onSetTitleFilter(title: string) {
-    this.dataService.setTitleFilter(title)
+    this.dataService.setTitleFilter(title);
   }
 
   onSearch() {
-    this.dataService.onFilter(this.searchInput)
-    this.searchInput = ''
+    this.dataService.onFilter(
+      this.searchInput,
+      this.locationInput,
+      this.fullTime
+    );
+    this.searchInput = '';
+    this.locationInput = '';
+    this.fullTime = false;
     // this.onSetTitleFilter(this.searchInput)
   }
 }
