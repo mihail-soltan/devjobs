@@ -38,6 +38,7 @@ export class DataService {
   }
 
   onFilter(title: string = '', location: string = '', fullTime: boolean){
+    this.getData()
     if(fullTime){
       const fullTimeOnly = this.jobs.getValue().filter((job) => job.contract === 'Full Time');
       this.jobs.next(fullTimeOnly)
