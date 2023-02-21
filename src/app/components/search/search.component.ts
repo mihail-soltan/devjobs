@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
 import { DataService } from 'src/app/services/data.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -14,26 +16,38 @@ export class SearchComponent implements OnInit {
 
   constructor(
     private sharedService: SharedService,
-    private dataService: DataService
+    private dataService: DataService,
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
-    console.log(this.darkmode);
     this.sharedService.fullTime.subscribe((fullTime: boolean) => {
       this.fullTime = this.sharedService.fullTime.value;
     });
+    // this.route.queryParams.subscribe((params) => {
+    //   const { title, location, fullTime } = params;
+    // });
   }
 
-  onFullTimeChange() {
-    // this.sharedService.onFullTimeChange();
-    console.log(this.fullTime);
-  }
+  // onFullTimeChange() {
+  //   // this.sharedService.onFullTimeChange();
+  //   console.log(this.fullTime);
+  // }
 
-  onSetTitleFilter(title: string) {
-    this.dataService.setTitleFilter(title);
-  }
+  // onSetTitleFilter(title: string) {
+  //   this.dataService.setTitleFilter(title);
+  // }
 
   onSearch() {
+    console.log("here")
+    this.dataService.searching.next(true)
+    const jobFilters = {title: this.searchInput, location: this.locationInput, fullTime: this.fullTime}
+    const {title, location, fullTime} = jobFilters
+    this.router.navigate([], {
+      queryParams: { title, location, fullTime },
+      queryParamsHandling: 'merge'
+    });
     this.dataService.onFilter(
       this.searchInput,
       this.locationInput,
@@ -42,6 +56,5 @@ export class SearchComponent implements OnInit {
     this.searchInput = '';
     this.locationInput = '';
     this.fullTime = false;
-    // this.onSetTitleFilter(this.searchInput)
   }
 }

@@ -7,6 +7,10 @@ import { JobListingComponent } from './components/job-listing/job-listing.compon
 const routes: Routes = [
   { path: '', component: JobListingComponent },
   {
+    path: 'jobs/search',
+    component: JobListingComponent,
+  },
+  {
     path: 'job',
     children: [
       {
