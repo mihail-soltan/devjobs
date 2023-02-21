@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
     })
     this.router.events.subscribe(event => {
       if(event instanceof NavigationStart){
-        if (event.url !== '/') {
+        if (event.url.includes("job")) {
           this.showSearch = false;
         } else {
           this.showSearch = true;
