@@ -27,14 +27,6 @@ export class JobListingComponent implements OnInit {
     this.sharedService.darkmode.subscribe((mode: boolean) => {
       this.darkmode = this.sharedService.darkmode.value;
     });
-    // this.sharedService.fullTime.subscribe((isFulltime: boolean) => {
-    //   this.isFullTime = this.sharedService.fullTime.value;
-    //   if (this.isFullTime) {
-    //     this.onShowFullTime();
-    //   } else {
-    //     this.getData();
-    //   }
-    // });
     this.dataService.jobs.subscribe((job) => {
       this.jobs = this.dataService.jobs.getValue();
     });
@@ -43,8 +35,10 @@ export class JobListingComponent implements OnInit {
       if (!this.dataService.searching.getValue()) {
         // this.dataService.searching.next(false);
         if (title || location || fullTime) {
-          this.dataService.onFilter(title, location, fullTime);
-          return
+          const bool = this.stringToBoolean(fullTime);
+          console.log(bool);
+          this.dataService.onFilter(title, location, bool);
+          return;
         }
         this.getData();
       }
@@ -55,13 +49,19 @@ export class JobListingComponent implements OnInit {
     this.jobs = this.dataService.getData().getValue();
   }
 
-  // onShowFullTime() {
-  //   this.jobs = this.dataService.onShowFullTime();
-  // }
-
   onOpenJobDetails(job: Job) {
     this.sharedService.setJobDetails(job);
     this.dataService.searching.next(false);
     this.router.navigate(['/job', job.company, job.id]);
+  }
+
+  stringToBoolean(str: string) {
+    if (str.toLowerCase() === 'true') {
+      return true;
+    } else if (str.toLowerCase() === 'false') {
+      return false;
+    } else {
+      throw new Error(`Invalid string value: ${str}`);
+    }
   }
 }

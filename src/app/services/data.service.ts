@@ -58,7 +58,8 @@ export class DataService {
         (job) =>
           job.position.toLowerCase().includes(title.toLowerCase()) &&
           job.location.toLowerCase().includes(location.toLowerCase()) &&
-          (job.contract === 'Full Time' || !fullTime)
+          // (job.contract === 'Full Time' || !fullTime)
+          (fullTime? job.contract === 'Full Time' : job.contract.includes('') )
       );
     console.log(filter);
     this.jobs.next(filter);
