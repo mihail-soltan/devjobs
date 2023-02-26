@@ -68,3 +68,11 @@
   background-color: var(--very-dark-blue);
   color: var(--white);
 }
+.not-found {
+  height: 100%;
+}
+.not-found.darkmode {
+  background-color: var(--midnight);
+  color: var(--white);
+  height:52.2vh;
+}
