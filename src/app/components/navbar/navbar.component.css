@@ -13,7 +13,9 @@
     z-index: -1;
 }
 
-
+.navbar a {
+    text-decoration: none;
+}
 .logo {
     color: var(--white);
     margin-bottom: 0 !important;
