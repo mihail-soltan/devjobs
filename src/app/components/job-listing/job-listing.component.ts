@@ -33,14 +33,15 @@ export class JobListingComponent implements OnInit {
     this.queryParamSubscription = this.route.queryParams.subscribe((params) => {
       const { title, location, fullTime } = params;
       if (!this.dataService.searching.getValue()) {
-        // this.dataService.searching.next(false);
         if (title || location || fullTime) {
           const bool = this.stringToBoolean(fullTime);
           console.log(bool);
           this.dataService.onFilter(title, location, bool);
-          return;
+          // return;
+        } 
+        else {
+          this.getData();
         }
-        this.getData();
       }
     });
   }
@@ -51,7 +52,6 @@ export class JobListingComponent implements OnInit {
 
   onOpenJobDetails(job: Job) {
     this.sharedService.setJobDetails(job);
-    this.dataService.searching.next(false);
     this.router.navigate(['/job', job.company, job.id]);
   }
 

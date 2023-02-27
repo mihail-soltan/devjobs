@@ -13,9 +13,9 @@ export class DataService {
   locationFilter = new BehaviorSubject(''); //filter by location
   jobs = new BehaviorSubject<any[]>([]);
   searching = new BehaviorSubject<boolean>(false);
-
+  private allJobs: any[] = data;
   getData() {
-    this.jobs.next(data);
+    this.jobs.next(this.allJobs);
     return this.jobs;
   }
 
@@ -24,9 +24,9 @@ export class DataService {
 
     const filter = this.jobs.getValue().filter(
       (job) =>
-        job.position.toLowerCase().includes(title.toLowerCase()) &&
+        (job.company.toLowerCase().includes(title.toLowerCase()) ||
+          job.position.toLowerCase().includes(title.toLowerCase())) &&
         job.location.toLowerCase().includes(location.toLowerCase()) &&
-        // (job.contract === 'Full Time' || !fullTime)
         (fullTime ? job.contract === 'Full Time' : job.contract.includes(''))
     );
 

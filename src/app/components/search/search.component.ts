@@ -25,28 +25,19 @@ export class SearchComponent implements OnInit {
     this.sharedService.fullTime.subscribe((fullTime: boolean) => {
       this.fullTime = this.sharedService.fullTime.value;
     });
-    // this.route.queryParams.subscribe((params) => {
-    //   const { title, location, fullTime } = params;
-    // });
   }
 
-  // onFullTimeChange() {
-  //   // this.sharedService.onFullTimeChange();
-  //   console.log(this.fullTime);
-  // }
-
-  // onSetTitleFilter(title: string) {
-  //   this.dataService.setTitleFilter(title);
-  // }
-
   onSearch() {
-    console.log("here")
-    this.dataService.searching.next(true)
-    const jobFilters = {title: this.searchInput, location: this.locationInput, fullTime: this.fullTime}
-    const {title, location, fullTime} = jobFilters
+    this.dataService.searching.next(true);
+    const jobFilters = {
+      title: this.searchInput,
+      location: this.locationInput,
+      fullTime: this.fullTime,
+    };
+    const { title, location, fullTime } = jobFilters;
     this.router.navigate([], {
       queryParams: { title, location, fullTime },
-      queryParamsHandling: 'merge'
+      queryParamsHandling: 'merge',
     });
     this.dataService.onFilter(
       this.searchInput,
@@ -56,5 +47,6 @@ export class SearchComponent implements OnInit {
     this.searchInput = '';
     this.locationInput = '';
     this.fullTime = false;
+    this.dataService.searching.next(false);
   }
 }
