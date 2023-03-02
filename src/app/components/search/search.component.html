@@ -6,11 +6,13 @@
       type="text"
       name="search"
       id="search"
-      placeholder="Filter by title, companies, expertise..."
+      [placeholder]="searchPlaceholder"
       [(ngModel)]="searchInput"
       class="search"
-      [ngClass]="{ 'darkmode': darkmode }"
+      [ngClass]="{ darkmode: darkmode }"
     />
+    <i class="icon filter-icon" (click)="onOpenFilterDialog()"></i>
+    <i class="icon mobile-search" (click)="onSearch()"></i>
   </div>
   <div class="form-input">
     <i class="icon location-icon"></i>
@@ -21,10 +23,10 @@
       placeholder="Filter by location..."
       [(ngModel)]="locationInput"
       class="location"
-      [ngClass]="{ 'darkmode': darkmode }"
+      [ngClass]="{ darkmode: darkmode }"
     />
   </div>
-  <div class="fulltime-container" [ngClass]="{ 'darkmode': darkmode }">
+  <div class="fulltime-container" [ngClass]="{ darkmode: darkmode }">
     <input
       type="checkbox"
       class="fulltime"
