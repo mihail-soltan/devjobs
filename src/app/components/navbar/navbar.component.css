@@ -10,7 +10,7 @@
     border-bottom-left-radius: 9rem;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .navbar a {
@@ -73,4 +73,22 @@
 
 .toggle input[type='checkbox']:checked ~ label::after {
     transform: translateX(1.563rem);
+}
+
+@media(max-width:768px) {
+    .navbar {
+        border-radius: 0;
+        background-image: url("../../../assets/mobile_navbar.png");
+        padding: 2.5rem 1.5rem 0 1.5rem;
+        align-items: flex-start;
+        height: 8.5rem;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .toggle {
+        margin-top: 0.3rem;
+    }
 }
