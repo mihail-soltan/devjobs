@@ -8,7 +8,7 @@ export class SharedService {
   currentTheme = localStorage.getItem('darkmode');
   darkmode = new BehaviorSubject(eval(this.currentTheme!));
   fullTime = new BehaviorSubject(false);
-
+  isFilterDialogOpen = new BehaviorSubject(false);
   private jobDetails: any;
 
   constructor() {}

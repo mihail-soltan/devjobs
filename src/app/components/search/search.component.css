@@ -102,6 +102,27 @@
   color: var(--white);
 }
 
+.filter-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  /* top: 10rem; */
+  width: 90%;
+  height: 25%;
+  border: 1px solid red;
+  margin: 1rem;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.filter-dialog.darkmode {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+.filter-dialog .form-input .location {
+  padding: 0;
+}
 @media (max-width: 768px) {
   .search-form div:nth-child(2),
   .search-form div:nth-child(3) {

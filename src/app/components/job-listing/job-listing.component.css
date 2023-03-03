@@ -76,3 +76,15 @@
   color: var(--white);
   height:52.2vh;
 }
+
+@media(max-width: 768px) {
+  .job-card {
+    width: 100%;
+    padding-bottom: 0;
+    margin: 1rem 0;
+  }
+
+  .job-listing-container {
+    padding: 1.5rem;
+  }
+}
