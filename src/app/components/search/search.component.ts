@@ -59,6 +59,9 @@ export class SearchComponent implements OnInit {
     this.locationInput = '';
     this.fullTime = false;
     this.dataService.searching.next(false);
+    if(this.filterDialogOpen){
+      this.filterDialogOpen = false;
+    }
   }
 
   setPlaceholderText() {
