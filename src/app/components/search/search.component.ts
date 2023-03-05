@@ -15,6 +15,7 @@ export class SearchComponent implements OnInit {
   fullTime: boolean = false;
 
   searchPlaceholder: string = 'Filter by title, companies, expertise...';
+  fullTimePlaceholder: string = 'Full Time Only';
 
   filterDialogOpen: boolean = false;
 
@@ -59,19 +60,20 @@ export class SearchComponent implements OnInit {
     this.locationInput = '';
     this.fullTime = false;
     this.dataService.searching.next(false);
-    if(this.filterDialogOpen){
+    if (this.filterDialogOpen) {
       this.filterDialogOpen = false;
     }
   }
 
   setPlaceholderText() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
       this.searchPlaceholder = 'Filter by title...';
+      this.fullTimePlaceholder = 'Full Time';
     } else {
       this.searchPlaceholder = 'Filter by title, companies, expertise...';
+      this.fullTimePlaceholder = 'Full Time Only';
     }
   }
-
 
   onOpenFilterDialog() {
     this.filterDialogOpen = true;

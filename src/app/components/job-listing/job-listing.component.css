@@ -86,5 +86,13 @@
 
   .job-listing-container {
     padding: 1.5rem;
+    min-height: 68vh;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 1024px) {
+  .job-card {
+    width: 16.875rem;
   }
 }

@@ -34,41 +34,43 @@
       [(ngModel)]="fullTime"
       id="fulltime"
     />
-    <label for="fulltime">Full Time Only</label>
+    <label for="fulltime">{{ fullTimePlaceholder }}</label>
     <button class="btn purple-btn" (click)="onSearch()">Search</button>
   </div>
 </form>
 <!-------------------------------------------- FILTER DIALOG ------------------------------------------>
-<div
-  class="filter-dialog"
-  *ngIf="filterDialogOpen"
-  [ngClass]="{ darkmode: darkmode }"
->
-  <div class="form-input">
-    <i class="icon location-icon"></i>
-    <input
-      type="text"
-      name="location"
-      id="location"
-      placeholder="Filter by location..."
-      [(ngModel)]="locationInput"
-      class="location"
-      [ngClass]="{ darkmode: darkmode }"
-    />
-  </div>
-  <div class="fulltime-container" [ngClass]="{ darkmode: darkmode }">
-    <div class="mobile-fulltime-checkbox">
+<form>
+  <div
+    class="filter-dialog"
+    *ngIf="filterDialogOpen"
+    [ngClass]="{ darkmode: darkmode }"
+  >
+    <div class="form-input">
+      <i class="icon location-icon"></i>
       <input
-        type="checkbox"
-        class="fulltime"
-        name="fulltime"
-        [(ngModel)]="fullTime"
-        id="fulltime"
+        type="text"
+        name="location"
+        id="location"
+        placeholder="Filter by location..."
+        [(ngModel)]="locationInput"
+        class="location"
+        [ngClass]="{ darkmode: darkmode }"
       />
-      <label for="fulltime">Full Time Only</label>
     </div>
-    <div style="width: 100%; text-align: center">
-      <button class="btn purple-btn" (click)="onSearch()">Search</button>
+    <div class="fulltime-container" [ngClass]="{ darkmode: darkmode }">
+      <div class="mobile-fulltime-checkbox">
+        <input
+          type="checkbox"
+          class="fulltime"
+          name="fulltime"
+          [(ngModel)]="fullTime"
+          id="fulltime"
+        />
+        <label for="fulltime">Full Time Only</label>
+      </div>
+      <div style="width: 100%; text-align: center">
+        <button class="btn purple-btn" (click)="onSearch()">Search</button>
+      </div>
     </div>
   </div>
-</div>
+</form>

@@ -478,5 +478,472 @@
         "Proactively solve the problems most important to the business"
       ]
     }
+  },
+  {
+    "id": 8530550528,
+    "company": "Mastercraft",
+    "logo": "./assets/logos/mastercraft.png",
+    "logoBackground": "hsl(216, 46%, 14%)",
+    "position": "Project Manager",
+    "postedAt": "9d ago",
+    "contract": "Full Time",
+    "location": "Portugal",
+    "website": "https://www.example.com/mastercraft",
+    "apply": "https://www.example.com/mastercraft/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 5170792406,
+    "company": "Pomodoro",
+    "logo": "./assets/logos/pomodoro.png",
+    "logoBackground": "hsl(22, 89%, 52%)",
+    "position": "Backend Developer",
+    "postedAt": "11d ago",
+    "contract": "Full Time",
+    "location": "Italy",
+    "website": "https://www.example.com/pomodoro",
+    "apply": "https://www.example.com/pomodoro/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 6414744771,
+    "company": "Crowdfund",
+    "logo": "./assets/logos/crowdfund.png",
+    "logoBackground": "hsl(235, 10%, 23%)",
+    "position": "Data Analyst",
+    "postedAt": "12d ago",
+    "contract": "Part Time",
+    "location": "Austria",
+    "website": "https://www.example.com/crowdfund",
+    "apply": "https://www.example.com/crowdfund/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 5629811904,
+    "company": "Pomodoro",
+    "logo": "./assets/logos/pomodoro.png",
+    "logoBackground": "hsl(216, 46%, 14%)",
+    "position": "Backend Developer",
+    "postedAt": "1d ago",
+    "contract": "Full Time",
+    "location": "Italy",
+    "website": "https://www.example.com/pomodoro",
+    "apply": "https://www.example.com/pomodoro/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 9234676239,
+    "company": "Creative",
+    "logo": "./assets/logos/creative.png",
+    "logoBackground": "hsl(29, 60%, 87%)",
+    "position": "Frontend Developer",
+    "postedAt": "10d ago",
+    "contract": "Part Time",
+    "location": "Romania",
+    "website": "https://www.example.com/creative",
+    "apply": "https://www.example.com/creative/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 5266640097,
+    "company": "Pomodoro",
+    "logo": "./assets/logos/pomodoro.png",
+    "logoBackground": "hsl(22, 89%, 52%)",
+    "position": "Software Engineer",
+    "postedAt": "12d ago",
+    "contract": "Part Time",
+    "location": "Romania",
+    "website": "https://www.example.com/pomodoro",
+    "apply": "https://www.example.com/pomodoro/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 2390567778,
+    "company": "Office Lite",
+    "logo": "./assets/logos/office lite.png",
+    "logoBackground": "hsl(216, 46%, 14%)",
+    "position": "Project Manager",
+    "postedAt": "11d ago",
+    "contract": "Full Time",
+    "location": "Portugal",
+    "website": "https://www.example.com/office lite",
+    "apply": "https://www.example.com/office lite/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 7035689971,
+    "company": "Pod",
+    "logo": "./assets/logos/pod.png",
+    "logoBackground": "hsl(235, 10%, 23%)",
+    "position": "Data Engineer",
+    "postedAt": "14d ago",
+    "contract": "Full Time",
+    "location": "Belgium",
+    "website": "https://www.example.com/pod",
+    "apply": "https://www.example.com/pod/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 8945377744,
+    "company": "Vector",
+    "logo": "./assets/logos/vector.png",
+    "logoBackground": "hsl(22, 89%, 52%)",
+    "position": "DevOps Engineer",
+    "postedAt": "3d ago",
+    "contract": "Part Time",
+    "location": "Germany",
+    "website": "https://www.example.com/vector",
+    "apply": "https://www.example.com/vector/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 1646158866,
+    "company": "Mastercraft",
+    "logo": "./assets/logos/mastercraft.png",
+    "logoBackground": "hsl(254, 71%, 45%)",
+    "position": "Data Analyst",
+    "postedAt": "6d ago",
+    "contract": "Part Time",
+    "location": "Germany",
+    "website": "https://www.example.com/mastercraft",
+    "apply": "https://www.example.com/mastercraft/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 2974878321,
+    "company": "Crowdfund",
+    "logo": "./assets/logos/crowdfund.png",
+    "logoBackground": "hsl(36, 87%, 49%)",
+    "position": "Data Scientist",
+    "postedAt": "5d ago",
+    "contract": "Full Time",
+    "location": "Portugal",
+    "website": "https://www.example.com/crowdfund",
+    "apply": "https://www.example.com/crowdfund/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 3281965087,
+    "company": "Pod",
+    "logo": "./assets/logos/pod.png",
+    "logoBackground": "hsl(157, 57%, 50%)",
+    "position": "Data Scientist",
+    "postedAt": "4d ago",
+    "contract": "Part Time",
+    "location": "Italy",
+    "website": "https://www.example.com/pod",
+    "apply": "https://www.example.com/pod/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 6942245268,
+    "company": "Maker",
+    "logo": "./assets/logos/maker.png",
+    "logoBackground": "hsl(227, 62%, 48%)",
+    "position": "Data Engineer",
+    "postedAt": "5d ago",
+    "contract": "Full Time",
+    "location": "Greece",
+    "website": "https://www.example.com/maker",
+    "apply": "https://www.example.com/maker/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 5380955233,
+    "company": "Scoot",
+    "logo": "./assets/logos/scoot.png",
+    "logoBackground": "hsl(22, 89%, 52%)",
+    "position": "DevOps Engineer",
+    "postedAt": "13d ago",
+    "contract": "Full Time",
+    "location": "Poland",
+    "website": "https://www.example.com/scoot",
+    "apply": "https://www.example.com/scoot/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
+  },
+  {
+    "id": 5802258997,
+    "company": "Coffeeroasters",
+    "logo": "./assets/logos/coffeeroasters.png",
+    "logoBackground": "hsl(254, 71%, 45%)",
+    "position": "Frontend Developer",
+    "postedAt": "1d ago",
+    "contract": "Full Time",
+    "location": "Netherlands",
+    "website": "https://www.example.com/coffeeroasters",
+    "apply": "https://www.example.com/coffeeroasters/apply",
+    "description": "We are looking for a passionate Frontend Developer to join our team. As a Frontend Developer, you will be responsible for implementing visual elements that users see and interact with in a web application. You will also be bridging the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+    "requirements": {
+      "content": "The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.",
+      "items": [
+        "5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.",
+        "Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.",
+        "Extremely data-driven.",
+        "Ability to debug complex systems."
+      ]
+    },
+    "role": {
+      "content": "We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.",
+      "items": [
+        "This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.",
+        "Translate the product roadmap into engineering requirements and own the engineering roadmap",
+        "Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.",
+        "Collaborate with product, design, and external engineering teammates as needed."
+      ]
+    }
   }
 ]
+
+
