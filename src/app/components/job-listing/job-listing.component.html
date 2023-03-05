@@ -25,7 +25,7 @@
       </div>
     </div>
   </div>
-  <button *ngIf="jobs.length" class="load-more-btn">Load More</button>
+  <button *ngIf="jobs.length" class="load-more-btn" (click)="onLoadMore()">Load More</button>
   <div *ngIf="!jobs.length" class="not-found" [ngClass]="{ darkmode: darkmode }">
     <h1>Sorry, no positions were found</h1>
   </div>

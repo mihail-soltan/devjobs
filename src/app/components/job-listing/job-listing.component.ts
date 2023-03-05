@@ -14,6 +14,7 @@ export class JobListingComponent implements OnInit {
   darkmode: boolean = false;
   isFullTime: boolean = false;
 
+  fakeJobs: Job[] = [];
   constructor(
     private dataService: DataService,
     private sharedService: SharedService,
@@ -38,8 +39,7 @@ export class JobListingComponent implements OnInit {
           console.log(bool);
           this.dataService.onFilter(title, location, bool);
           // return;
-        } 
-        else {
+        } else {
           this.getData();
         }
       }
@@ -63,5 +63,9 @@ export class JobListingComponent implements OnInit {
     } else {
       throw new Error(`Invalid string value: ${str}`);
     }
+  }
+
+  onLoadMore() {
+    this.jobs = this.dataService.loadMore().getValue();
   }
 }
