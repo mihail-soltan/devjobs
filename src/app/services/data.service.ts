@@ -27,17 +27,22 @@ export class DataService {
     this.getData();
 
     // const filter = this.jobs
-      // .getValue()
-      const filter = this.allJobs
-      
-      .filter(
-        (job) =>
-          (job.company.toLowerCase().includes(title.toLowerCase()) ||
-            job.position.toLowerCase().includes(title.toLowerCase())) &&
-          job.location.toLowerCase().includes(location.toLowerCase()) &&
-          (fullTime ? job.contract === 'Full Time' : job.contract.includes(''))
-      );
+    // .getValue()
+    const filter = this.allJobs.filter(
+      (job) =>
+        (job.company.toLowerCase().includes(title.toLowerCase()) ||
+          job.position.toLowerCase().includes(title.toLowerCase())) &&
+        job.location.toLowerCase().includes(location.toLowerCase()) &&
+        (fullTime ? job.contract === 'Full Time' : job.contract.includes(''))
+    );
 
     this.jobs.next(filter);
+  }
+
+  onGetJobDetails(id: string, company: string) {
+    const job = this.allJobs.find(
+      (job) => job.id === parseInt(id) && job.company === company
+    );
+    return job;
   }
 }
