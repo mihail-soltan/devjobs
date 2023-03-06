@@ -79,4 +79,8 @@ export class SearchComponent implements OnInit {
     this.filterDialogOpen = true;
     console.log(this.filterDialogOpen);
   }
+
+  onCloseFilterDialog() {
+    this.filterDialogOpen = false;
+  }
 }
