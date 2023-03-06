@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;700&family=Inter:wght@400;800&family=Kumbh+Sans:wght@100;400;700&family=League+Spartan:wght@100&display=swap");
 @import "./variables.css";
 
 html,
@@ -13,33 +12,33 @@ body {
 /* FONTS */
 
 h1 {
-  font-size: var(--large-font) !important;
-  line-height: var(--large-line-height) !important;
-  font-weight: var(--bold-font-weight) !important;
+  font-size: var(--large-font);
+  line-height: var(--large-line-height);
+  font-weight: var(--bold-font-weight);
 }
 
 h2 {
-  font-size: var(--medium-font) !important;
-  line-height: var(--medium-line-height) !important;
-  font-weight: var(--bold-font-weight) !important;
+  font-size: var(--medium-font);
+  line-height: var(--medium-line-height);
+  font-weight: var(--bold-font-weight);
 }
 
 h3 {
-  font-size: var(--normal-font)  !important;
-  line-height: var(--normal-line-height) !important;
-  font-weight: var(--bold-font-weight) !important;
+  font-size: var(--normal-font);
+  line-height: var(--normal-line-height);
+  font-weight: var(--bold-font-weight);
 }
 
 h4 {
-  font-size: var(--small-font) !important;
-  line-height: var(--normal-line-height) !important;
-  font-weight: var(--bold-font-weight) !important;
+  font-size: var(--small-font);
+  line-height: var(--normal-line-height);
+  font-weight: var(--bold-font-weight);
 }
 
 p {
-  font-size: var(--regular-font) !important;
-  line-height: var(--regular-line-height) !important;
-  font-weight: var(--regular-font-weight) !important;
+  font-size: var(--regular-font);
+  line-height: var(--regular-line-height);
+  font-weight: var(--regular-font-weight);
 }
 
 /* BUTTONS */

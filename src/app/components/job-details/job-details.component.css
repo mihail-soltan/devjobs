@@ -99,9 +99,82 @@ footer {
 }
 
 .light-grey-btn.darkmode {
-    background-color: var(--dark-grey);
-    color: var(--white);
+  background-color: var(--dark-grey);
+  color: var(--white);
 }
 .light-grey-btn.darkmode:hover {
-    background-color: var(--grey);
+  background-color: var(--grey);
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 90%;
+    top: -2rem;
+  }
+  .header,
+  .brand-container {
+    flex-direction: column;
+  }
+  .details-logo {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0;
+    top: -2rem;
+    align-self: center;
+    border-radius: 0.9rem;
+  }
+  .brand-container > div:nth-child(2) {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .btn-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .details-main {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    margin-bottom: 5rem;
+    border-radius: 0;
+  }
+  .apply-now-container {
+    flex-direction: column;
+  }
+
+  .details-title h1 {
+    font-size: var(--medium-font);
+  }
+
+  .apply-now-container > div:nth-child(2),
+  .apply-now-container > div:nth-child(2) .btn {
+    width: 100%;
+  }
+  ul, ol {
+    padding: 1rem;
+  }
+  li span {
+    left: 1rem;
+  }
+  footer, .details-main {
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-content > div:first-child {
+    display: none;
+  }
+  .footer-post {
+    width: 100%;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .footer-post .btn {
+    width: 90%
+  }
 }
